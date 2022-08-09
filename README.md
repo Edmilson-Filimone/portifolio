@@ -1,3 +1,3 @@
 # portifolio
 
-Portifolio webpage, designed by Rockeseat for Discover challenge;
+Portifolio webpage, designed by Rocketseat for Discover challenge;
