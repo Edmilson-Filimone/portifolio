@@ -1,0 +1,25 @@
+@media(max-width: 900px){
+  body{
+    flex-direction: column;
+    margin-left: 2%;
+  }
+
+  aside{
+    width:85vw;
+  }
+  .side-card{
+    width: 100%;
+  }
+
+  .card.two{
+    flex-direction: column;
+  }
+
+  main{
+    width: 85vw;
+  }
+
+  .card{
+    width: 100%
+  }
+}
