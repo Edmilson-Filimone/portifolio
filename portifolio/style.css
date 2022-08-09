@@ -1,0 +1,252 @@
+/*Variaves de cor*/
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+  }
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/**/
+body{
+    display: flex;
+    background-color: var(--body-bg-color);
+    gap:30px
+  }
+
+ul{
+    list-style: none
+  }
+
+.side-card, .inner-card, .one, .three, .four{
+    background-color:var(--bg-cards);
+    padding:20px 15px;
+  }
+
+.side-card, .card{
+    margin: 25px;
+    border-radius: 15px;
+     }
+
+
+.card{
+  
+}
+
+
+.card.one{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.card.two{
+  display: flex;
+  gap:20px;
+}
+
+.card.three{
+}
+
+.card.four{
+  display: flex;
+  gap:15px;
+
+
+}
+
+.card.four img{
+  flex-basis:130px;
+  flex-shrink: 0;
+  width: 130px;
+  border-radius: 20px;
+}
+
+.post-title{
+  font-weight: 700;
+}
+
+.post-date{
+  font-size: 13px;
+  margin:5px 0px 18px;
+}
+
+.post-description{
+  margin-bottom: 10px;
+}
+
+.inner-card{
+  padding:20px 15px;
+  border-radius: 15px;
+}
+
+.card-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap:20px;
+
+}
+
+.inner-card-item{
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.item-icon object{
+  height: 19px;
+  margin-right: 10px;
+  color: #837E9F;
+}
+
+.item-title{
+  vertical-align:text-bottom;
+  font-weight: 400;
+}
+
+.social-status{
+  position: relative;
+  margin:5px;
+}
+
+.social-status span{
+ font-size: 14px;
+ vertical-align: middle;
+}
+
+.item-icon-star img, .item-icon-fork img, .item-icon-language img{
+  height: 14px;
+}
+
+div.social-status:nth-child(3){
+  margin-left:38%;
+}
+
+
+.text-left, .recent-posts{
+  font-weight: 700;
+  }
+
+
+/*ASIDE ONLY*/
+
+aside{
+  width: 30%;
+}
+.side-card{
+  padding:20px;
+  width: 100%;
+  text-align: center;
+}
+
+.profile-image img{
+  
+  width: 130px;
+  border-radius: 100%;
+  border: 4px solid rgb(181, 108, 254);
+}
+
+.profile-name{
+  margin:15px 0px 5px;
+  font-weight: 700;
+}
+
+.profile-job{
+  font-size: 14px;
+}
+
+.info-detail{
+  text-align: left;
+  font-size: 14px;
+}
+
+.info-detail-item{
+  margin-bottom:15px;
+  display: flex;
+  align-content: center;
+}
+
+.info-detail-icon object{
+  height: 18px;
+  padding-right: 10px;
+}
+
+.side-card-title{
+  font-weight: 700;
+  text-align: start;
+  margin-bottom: 18px;
+}
+
+.skills-info{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+.skill-info-item{
+  background-color: var(--bg-techs);
+  border-radius: 15px;
+  font-size: 10px;
+  color: var(--body-bg-color);
+  flex-basis: 68px;
+  margin: 3px;
+  padding:3px;
+
+}
+
+.expirience-info, .education-info{
+  list-style:disc;
+  list-style-position: inside;
+  text-align: start;
+  padding-left:23px;
+  margin-bottom: 15px;
+}
+
+.expirience-info li, .education-info li{
+  margin-bottom: 2.5px;
+}
+
+.expirience-info-company,.education-info-name{
+  font-weight: 700;
+}
+
+.expirience-info-description, .education-info-description{
+  font-weight: 400;
+}
+
+@media(max-width: 900px){
+  body{
+    flex-direction: column;
+    margin-left: 2%;
+  }
+
+  aside{
+    width:85vw;
+  }
+  .side-card{
+    width: 100%;
+  }
+
+  .card.two{
+    flex-direction: column;
+  }
+
+  main{
+    width: 85vw;
+  }
+
+  .card{
+    width: 100%
+  }
+}
